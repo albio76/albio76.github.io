@@ -1,0 +1,1134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>花花神马第九影电影_第九影电影片单_花花神马影视社区</title>
+<meta name="description" content="花花神马第九影电影是聚合第九影系列片单与观影索引的社区站点，提供第九影电影精选片单、最新上线动态、类型分类、深度解析、体验指南与影迷评论，适合想系统追看第九影系列与同类型影片的观众参考。">
+<meta name="keywords" content="第九影系列片单,科幻影像合集,电影类型解析,影迷社区评论,影视上线动态">
+<style>
+:root{
+  --ink:#161a22;
+  --ink-2:#2c3444;
+  --muted:#5f6b7d;
+  --line:#e2e6ee;
+  --bg:#f5f7fb;
+  --panel:#ffffff;
+  --brand:#1f5fd6;
+  --brand-2:#0e3f9e;
+  --accent:#e8532f;
+  --accent-soft:#fdece7;
+  --gold:#c9922b;
+  --green:#1c8a5b;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(22,26,34,.06),0 8px 24px rgba(22,26,34,.06);
+  --shadow-sm:0 1px 2px rgba(22,26,34,.05);
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --serif:"Songti SC","Noto Serif SC",Georgia,serif;
+  --ann-h:38px;
+  --head-h:64px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:var(--sans);color:var(--ink);background:var(--bg);
+  line-height:1.7;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+img{display:block;max-width:100%}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 .8em}
+ul,ol{margin:0 0 .8em;padding-left:1.25em}
+:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1320px;margin:0 auto;padding:0 20px}
+section[id],div[id]{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px)}
+
+/* ---------- 吸顶公告条 ---------- */
+.annbar{
+  position:sticky;top:0;z-index:60;height:var(--ann-h);
+  background:linear-gradient(90deg,#0e3f9e,#1f5fd6 55%,#2f79e8);
+  color:#fff;display:flex;align-items:center;font-size:13px;
+}
+.annbar .wrap{display:flex;align-items:center;gap:14px;width:100%;overflow:hidden}
+.ann-tag{
+  flex:0 0 auto;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.32);
+  border-radius:999px;padding:1px 10px;font-size:12px;letter-spacing:.04em;
+}
+.ann-marquee{flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.96}
+.ann-marquee b{font-weight:700}
+.ann-marquee i{font-style:normal;opacity:.65;margin:0 10px}
+.ann-more{flex:0 0 auto;color:#fff;border-bottom:1px solid rgba(255,255,255,.5);font-size:12px}
+
+/* ---------- 吸顶页头 ---------- */
+.head{
+  position:sticky;top:var(--ann-h);z-index:55;height:var(--head-h);
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head .wrap{display:flex;align-items:center;gap:22px;height:100%}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brand-mark{width:34px;height:34px;flex:0 0 auto}
+.brand-txt{display:flex;flex-direction:column;line-height:1.15}
+.brand-txt strong{font-size:16px;letter-spacing:.02em}
+.brand-txt span{font-size:10px;color:var(--muted);letter-spacing:.18em;text-transform:uppercase}
+.nav{display:flex;align-items:center;gap:2px;flex:1 1 auto;min-width:0;overflow:hidden}
+.nav a{
+  color:var(--ink-2);font-size:14px;padding:7px 11px;border-radius:8px;white-space:nowrap;
+}
+.nav a:hover{background:#eef3fd;color:var(--brand-2);text-decoration:none}
+.head-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.search{display:flex;align-items:center;gap:6px;background:#f0f3f9;border:1px solid var(--line);border-radius:999px;padding:4px 4px 4px 12px}
+.search input{border:0;background:transparent;font:inherit;font-size:13px;width:132px;color:var(--ink);outline:none}
+.search button{
+  border:0;background:var(--brand);color:#fff;border-radius:999px;font:inherit;font-size:13px;
+  padding:5px 13px;cursor:pointer;
+}
+.search button:hover{background:var(--brand-2)}
+.menu-btn{display:none}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:9px 18px;
+  font-size:14px;font-weight:600;border:1px solid transparent;cursor:pointer;font-family:inherit;
+}
+.btn-main{background:var(--brand);color:#fff}
+.btn-main:hover{background:var(--brand-2);text-decoration:none;color:#fff}
+.btn-ghost{background:#fff;color:var(--ink-2);border-color:var(--line)}
+.btn-ghost:hover{border-color:#b9c6de;text-decoration:none}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;color:#fff;
+  background:
+    radial-gradient(1200px 420px at 78% -10%,rgba(72,132,255,.55),transparent 62%),
+    radial-gradient(900px 380px at 8% 110%,rgba(232,83,47,.35),transparent 60%),
+    linear-gradient(155deg,#0b1730 0%,#122a55 48%,#0e3f9e 100%);
+  border-bottom:1px solid #0a1c3a;
+}
+.hero::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:56px 56px;mask-image:radial-gradient(70% 70% at 60% 30%,#000,transparent 90%);
+}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:44px;padding-top:56px;padding-bottom:56px;align-items:center}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:.16em;color:#a9c4f5;border:1px solid rgba(169,196,245,.35);border-radius:999px;padding:4px 13px;margin-bottom:18px}
+.hero-kicker i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block}
+.hero h1{
+  font-family:var(--serif);font-size:clamp(30px,4.2vw,50px);letter-spacing:.01em;
+  line-height:1.2;margin-bottom:16px;text-shadow:0 2px 24px rgba(0,0,0,.3);
+}
+.hero h1 em{font-style:normal;color:#ffd68a}
+.hero-lead{font-size:15.5px;color:#c9d8f2;max-width:34em;margin-bottom:22px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.hero .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.32)}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.55);color:#fff}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;border-top:1px solid rgba(255,255,255,.16);padding-top:18px}
+.hero-stats div{min-width:88px}
+.hero-stats b{display:block;font-family:var(--serif);font-size:24px;color:#fff;line-height:1.2}
+.hero-stats span{font-size:12px;color:#9fb8de;letter-spacing:.06em}
+
+/* 首屏视觉：原创 SVG 胶片塔 */
+.hero-visual{position:relative}
+.hero-visual svg{width:100%;height:auto;filter:drop-shadow(0 18px 40px rgba(0,0,0,.35))}
+.hero-card{
+  position:absolute;right:6px;bottom:-6px;background:rgba(9,20,40,.82);
+  border:1px solid rgba(140,178,240,.32);border-radius:var(--radius);
+  padding:11px 14px;backdrop-filter:blur(6px);max-width:230px;
+}
+.hero-card strong{display:block;font-size:13px;color:#ffd68a;margin-bottom:3px}
+.hero-card span{font-size:12px;color:#a9c4f5;line-height:1.5;display:block}
+
+/* ---------- 布局 ---------- */
+.layout{display:grid;grid-template-columns:190px minmax(0,1fr) 268px;gap:26px;align-items:start;padding-top:34px;padding-bottom:48px}
+.rail{position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px);display:flex;flex-direction:column;gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+.rail .card{padding:14px}
+.rail h2{font-size:12px;letter-spacing:.14em;color:var(--muted);margin-bottom:10px;font-weight:700}
+.chan{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1px}
+.chan a{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  font-size:13.5px;color:var(--ink-2);padding:7px 9px;border-radius:7px;
+}
+.chan a:hover{background:#eef3fd;color:var(--brand-2);text-decoration:none}
+.chan a b{font-weight:600}
+.chan a i{font-style:normal;font-size:11.5px;color:var(--muted);background:#f0f3f9;border-radius:5px;padding:0 5px}
+.rail-note{font-size:12.5px;color:var(--muted);line-height:1.65}
+
+/* 右侧热榜 */
+.rank{list-style:none;padding:0;margin:0;counter-reset:rk}
+.rank li{counter-increment:rk;display:flex;gap:9px;padding:8px 0;border-bottom:1px dashed var(--line);font-size:13px}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(rk);flex:0 0 18px;height:18px;border-radius:5px;background:#eef1f7;color:var(--muted);
+  font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:3px;
+}
+.rank li:nth-child(-n+3)::before{background:var(--accent-soft);color:var(--accent)}
+.rank a{color:var(--ink);font-weight:600;display:block;line-height:1.45}
+.rank a:hover{color:var(--brand)}
+.rank small{display:block;color:var(--muted);font-size:11.5px;font-weight:400}
+
+/* 更新流（侧栏） */
+.upd{list-style:none;padding:0;margin:0;font-size:12.5px}
+.upd li{padding:7px 0;border-bottom:1px dashed var(--line);color:var(--ink-2);line-height:1.5}
+.upd li:last-child{border-bottom:0}
+.upd time{display:block;font-size:11px;color:var(--muted);margin-top:1px}
+
+/* ---------- 主内容板块通用 ---------- */
+.main{display:flex;flex-direction:column;gap:30px;min-width:0}
+.block{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);padding:24px 26px}
+.block-hd{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:6px;flex-wrap:wrap}
+.block-hd h2{font-size:20px;letter-spacing:.01em;display:flex;align-items:center;gap:9px}
+.block-hd h2::before{content:"";width:4px;height:18px;border-radius:2px;background:var(--brand);display:inline-block}
+.block-hd .sub{font-size:12.5px;color:var(--muted)}
+.block-desc{font-size:13.5px;color:var(--muted);margin:2px 0 18px}
+
+/* 概览段落 */
+.overview{font-size:14.5px;color:var(--ink-2)}
+.overview p{margin-bottom:.9em}
+.overview strong{color:var(--ink)}
+.ov-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:16px}
+.ov-item{background:#f7f9fd;border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 13px}
+.ov-item b{display:block;font-size:13.5px;margin-bottom:3px}
+.ov-item span{font-size:12.5px;color:var(--muted);line-height:1.6}
+
+/* 精选卡片 */
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.fcard{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s}
+.fcard:hover{box-shadow:var(--shadow);transform:translateY(-2px)}
+.fcard figure{margin:0;position:relative;aspect-ratio:4/3;overflow:hidden;background:#dde4f0}
+.fcard img{width:100%;height:100%;object-fit:cover}
+.fcard .badge{
+  position:absolute;left:9px;top:9px;background:rgba(10,22,45,.82);color:#fff;font-size:11px;
+  padding:2px 8px;border-radius:999px;letter-spacing:.04em;backdrop-filter:blur(4px);
+}
+.fcard .score{
+  position:absolute;right:9px;top:9px;background:rgba(232,83,47,.94);color:#fff;font-size:11.5px;
+  font-weight:700;padding:2px 8px;border-radius:6px;
+}
+.fcard-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:7px;flex:1}
+.fcard-body h3{font-size:15px;line-height:1.4}
+.fcard-body h3 a{color:var(--ink)}
+.fcard-body h3 a:hover{color:var(--brand);text-decoration:none}
+.fcard-body p{font-size:12.5px;color:var(--muted);line-height:1.62;margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto}
+.tag{font-size:11px;color:#4b5a72;background:#f0f3f9;border-radius:5px;padding:1px 7px;white-space:nowrap}
+.tag.hot{background:var(--accent-soft);color:#b53c1c}
+.fcard-meta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+
+/* 最新更新列表 */
+.ulist{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 26px}
+.ulist li{display:flex;gap:11px;padding:11px 0;border-bottom:1px dashed var(--line);align-items:flex-start}
+.ulist time{flex:0 0 58px;font-size:11.5px;color:var(--brand);font-weight:600;padding-top:2px;letter-spacing:.01em}
+.ulist .u-main{min-width:0}
+.ulist .u-main b{font-size:13.5px;display:block;line-height:1.45}
+.ulist .u-main b a{color:var(--ink)}
+.ulist .u-main b a:hover{color:var(--brand)}
+.ulist .u-main span{font-size:12.5px;color:var(--muted);line-height:1.55;display:block;margin-top:1px}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  display:block;border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 14px;background:#fbfcfe;
+  color:var(--ink);transition:border-color .16s,background .16s;
+}
+.cat:hover{border-color:#b9c6de;background:#f2f6fe;text-decoration:none}
+.cat b{display:flex;align-items:center;justify-content:space-between;font-size:14px;margin-bottom:3px}
+.cat b i{font-style:normal;font-size:11.5px;color:var(--brand);font-weight:600}
+.cat span{font-size:12px;color:var(--muted);line-height:1.55}
+
+/* 深度解析 */
+.article{font-size:14.5px;color:var(--ink-2);max-width:46em}
+.article h3{font-size:16.5px;margin:22px 0 8px;color:var(--ink);font-family:var(--serif)}
+.article h3:first-of-type{margin-top:6px}
+.article ul{padding-left:1.2em}
+.article li{margin-bottom:.35em}
+.article .callout{
+  background:#f7f9fd;border-left:3px solid var(--brand);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:12px 16px;font-size:13.5px;color:var(--ink-2);margin:14px 0;
+}
+.article .callout b{color:var(--brand-2)}
+.cmp{width:100%;border-collapse:collapse;font-size:13px;margin:12px 0 16px}
+.cmp th,.cmp td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+.cmp th{background:#f0f3f9;font-weight:700;font-size:12.5px;color:var(--ink)}
+.cmp td{color:var(--muted)}
+
+/* 体验指南 步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:st;display:flex;flex-direction:column;gap:14px}
+.steps li{counter-increment:st;display:grid;grid-template-columns:34px minmax(0,1fr);gap:13px;align-items:start}
+.steps li::before{
+  content:counter(st);grid-column:1;width:30px;height:30px;border-radius:9px;background:var(--brand);color:#fff;
+  font-size:13.5px;font-weight:700;display:flex;align-items:center;justify-content:center;
+}
+.steps .st-body h3{font-size:14.5px;margin-bottom:3px}
+.steps .st-body p{font-size:13px;color:var(--muted);margin:0}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;gap:9px}
+.faq details{border:1px solid var(--line);border-radius:var(--radius-sm);background:#fbfcfe;overflow:hidden}
+.faq details[open]{background:#fff;border-color:#c3d1e9}
+.faq summary{
+  cursor:pointer;list-style:none;padding:12px 44px 12px 15px;font-size:14px;font-weight:600;position:relative;
+  color:var(--ink);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:15px;top:50%;transform:translateY(-50%);font-size:18px;
+  color:var(--brand);font-weight:400;line-height:1;
+}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 15px 14px;font-size:13.5px;color:var(--muted);line-height:1.72}
+
+/* 评论 */
+.cmts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cmt{border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px;background:#fbfcfe}
+.cmt-hd{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.ava{
+  width:26px;height:26px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+  font-size:11.5px;font-weight:700;color:#fff;background:var(--brand);
+}
+.ava.a2{background:#1c8a5b}.ava.a3{background:var(--accent)}.ava.a4{background:#7a52c8}
+.ava.a5{background:var(--gold)}.ava.a6{background:#2b7f9e}
+.cmt-hd b{font-size:13px}
+.cmt-hd time{font-size:11px;color:var(--muted);margin-left:auto}
+.cmt p{font-size:13px;color:var(--ink-2);margin:0;line-height:1.65}
+.cmt .on{color:var(--brand);font-weight:600}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.news article{border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;background:#fff;display:flex;gap:0;flex-direction:column}
+.news img{width:100%;height:132px;object-fit:cover}
+.news .n-body{padding:11px 13px 13px}
+.news h3{font-size:14px;margin-bottom:5px;line-height:1.45}
+.news h3 a{color:var(--ink)}
+.news h3 a:hover{color:var(--brand);text-decoration:none}
+.news p{font-size:12.5px;color:var(--muted);margin:0;line-height:1.6}
+.news time{display:block;font-size:11px;color:var(--brand);margin-bottom:4px;font-weight:600}
+
+/* 相关推荐 标签索引 */
+.rel{display:flex;flex-wrap:wrap;gap:9px}
+.rel a{
+  display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;
+  padding:6px 14px;font-size:13px;color:var(--ink-2);background:#fbfcfe;
+}
+.rel a:hover{border-color:var(--brand);color:var(--brand);text-decoration:none;background:#f2f6fe}
+.rel a i{font-style:normal;font-size:11px;color:var(--muted)}
+
+/* 时间线 */
+.tl{list-style:none;padding:0;margin:0;position:relative}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.tl li{position:relative;padding:0 0 16px 30px}
+.tl li:last-child{padding-bottom:0}
+.tl li::before{
+  content:"";position:absolute;left:1px;top:7px;width:14px;height:14px;border-radius:50%;
+  background:#fff;border:3px solid var(--brand);
+}
+.tl li.hl::before{border-color:var(--accent)}
+.tl b{font-size:13.5px;display:block;margin-bottom:1px}
+.tl span{font-size:12.5px;color:var(--muted);line-height:1.6;display:block}
+.tl time{font-size:11.5px;color:var(--brand);font-weight:600;margin-right:8px}
+
+/* 搜索结果提示 */
+.noresult{display:none;font-size:13px;color:var(--muted);padding:12px 0;border-top:1px dashed var(--line);margin-top:12px}
+.noresult.on{display:block}
+.hidden{display:none !important}
+
+/* ---------- 页尾 ---------- */
+.foot{background:#0d1626;color:#c3cede;padding:40px 0 26px;margin-top:10px}
+.foot .wrap{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:30px}
+.foot .fbrand{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:#fff}
+.foot .fbrand strong{font-size:15px}
+.foot p{font-size:12.5px;color:#8b9bb3;line-height:1.75;margin:0 0 10px}
+.foot h4{font-size:12px;letter-spacing:.14em;color:#7d8ea8;margin-bottom:10px;font-weight:700}
+.foot ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+.foot ul a{color:#c3cede;font-size:12.5px}
+.foot ul a:hover{color:#fff}
+.foot-bot{border-top:1px solid #1e2b41;margin-top:30px;padding-top:16px;font-size:11.5px;color:#76869e;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr) 240px;gap:20px}
+  .fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  .hero .wrap{grid-template-columns:1fr;gap:26px;padding-top:40px;padding-bottom:44px}
+  .hero-visual{order:2;max-width:480px}
+  .hero-card{position:static;margin-top:12px;max-width:none}
+  .layout{grid-template-columns:minmax(0,1fr) 260px}
+  .rail-left{display:none}
+  .nav{display:none}
+  .menu-btn{display:inline-flex}
+  .head .wrap{gap:12px}
+  .ov-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .foot .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:880px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .rail{position:static}
+  .ulist{grid-template-columns:1fr}
+  .cmts{grid-template-columns:1fr}
+  .news{grid-template-columns:1fr}
+}
+@media (max-width:740px){
+  :root{--head-h:58px}
+  .wrap{padding:0 15px}
+  .annbar .wrap{gap:8px}
+  .ann-more{display:none}
+  .search{display:none}
+  .block{padding:18px 16px}
+  .fgrid{grid-template-columns:1fr}
+  .ov-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr}
+  .hero h1{font-size:28px}
+  .hero-stats{gap:18px}
+  .foot .wrap{grid-template-columns:1fr}
+  .block-hd h2{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .fcard{transition:none}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="annbar" role="region" aria-label="站点更新公告">
+  <div class="wrap">
+    <span class="ann-tag">今日更新</span>
+    <div class="ann-marquee">
+      <b>《第九影·深渊回声》</b>11 月 25 日 20:00 上线第 3 卷<i>·</i>
+      <b>第九影系列片单</b>本周新增 14 条条目<i>·</i>
+      <b>《第九影·潮汐档案》</b>评分升至 8.7<i>·</i>
+      11 月 24 日新增「夜航放映室」专题 6 部
+    </div>
+    <a class="ann-more" href="/#updates">全部动态</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="/#top">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <defs>
+          <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2f79e8"/><stop offset="1" stop-color="#0e3f9e"/>
+          </linearGradient>
+        </defs>
+        <rect x="1" y="1" width="38" height="38" rx="11" fill="url(#bg1)"/>
+        <circle cx="20" cy="20" r="9.4" fill="none" stroke="#9fc2ff" stroke-width="1.6" opacity=".7"/>
+        <path d="M15.5 12.6h3.2v14.8h-3.2z" fill="#fff"/>
+        <path d="M21.3 12.6h3.2v14.8h-3.2z" fill="#ffd68a"/>
+        <circle cx="20" cy="20" r="2.4" fill="#e8532f"/>
+      </svg>
+      <span class="brand-txt">
+        <strong>花花神马第九影电影</strong>
+        <span>Ninth Shadow Cinema</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="/#overview">站内概览</a>
+      <a href="/#featured">精选片单</a>
+      <a href="/#updates">上线动态</a>
+      <a href="/#categories">类型分类</a>
+      <a href="/#deepdive">深度解析</a>
+      <a href="/#guide">观影路径</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#comments">影迷评论</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search" role="search">
+        <label for="q" style="position:absolute;left:-9999px">在片单中查找</label>
+        <input id="q" type="search" placeholder="查找条目 / 类型" autocomplete="off">
+        <button type="button" id="qbtn">查找</button>
+      </div>
+      <a class="btn btn-main" href="/#featured">看片单</a>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="hero-kicker"><i></i>第九影系列 · 片单与观影索引</span>
+      <h1>花花神马第九影电影</h1>
+      <p class="hero-lead">
+        围绕第九影系列展开的片单库与观影索引：收录 9 部主线长篇、17 部番外短片与 6 个专题合辑，
+        按科幻悬疑、都市奇谈、纪录影像、实验短片分类归档，附评分、上线时间与逐条看点，方便你在动手看之前先把顺序和口味对齐。
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-main" href="/#featured">浏览 9 部主线片单</a>
+        <a class="btn btn-ghost" href="/#guide">第一次看从哪部开始</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>32</b><span>在册条目</span></div>
+        <div><b>8.4</b><span>系列均分</span></div>
+        <div><b>14</b><span>本周新增</span></div>
+        <div><b>1.9万</b><span>影迷标记</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg viewBox="0 0 460 400" role="img" aria-label="第九影系列胶片塔与光轨构成的首屏视觉">
+        <defs>
+          <linearGradient id="fg1" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#4d8bff"/><stop offset="1" stop-color="#12306b"/>
+          </linearGradient>
+          <linearGradient id="fg2" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#ffd68a"/><stop offset="1" stop-color="#e8532f"/>
+          </linearGradient>
+          <linearGradient id="fg3" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffffff" stop-opacity=".28"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <circle cx="330" cy="120" r="118" fill="url(#fg3)"/>
+        <g opacity=".9">
+          <rect x="58" y="86" width="150" height="228" rx="12" fill="url(#fg1)" opacity=".92"/>
+          <rect x="74" y="102" width="118" height="196" rx="7" fill="#0b1c3a"/>
+          <g fill="#7fb0ff" opacity=".8">
+            <rect x="86" y="116" width="94" height="6" rx="3"/>
+            <rect x="86" y="132" width="70" height="6" rx="3"/>
+            <rect x="86" y="148" width="84" height="6" rx="3"/>
+            <rect x="86" y="164" width="52" height="6" rx="3"/>
+          </g>
+          <circle cx="133" cy="228" r="42" fill="none" stroke="#ffd68a" stroke-width="2" opacity=".75"/>
+          <circle cx="133" cy="228" r="17" fill="url(#fg2)"/>
+          <rect x="86" y="282" width="94" height="5" rx="2.5" fill="#7fb0ff" opacity=".55"/>
+        </g>
+        <g>
+          <rect x="238" y="150" width="132" height="164" rx="10" fill="#132a52" stroke="#3d6dbe" stroke-width="1.4"/>
+          <g fill="#0a1830">
+            <rect x="250" y="162" width="108" height="12" rx="3"/>
+            <rect x="250" y="184" width="108" height="12" rx="3"/>
+            <rect x="250" y="206" width="108" height="12" rx="3"/>
+            <rect x="250" y="228" width="108" height="12" rx="3"/>
+            <rect x="250" y="250" width="108" height="12" rx="3"/>
+            <rect x="250" y="272" width="108" height="12" rx="3"/>
+          </g>
+          <g fill="#ffd68a" opacity=".95">
+            <rect x="250" y="162" width="30" height="12" rx="3"/>
+            <rect x="250" y="206" width="46" height="12" rx="3"/>
+            <rect x="250" y="250" width="24" height="12" rx="3"/>
+          </g>
+        </g>
+        <path d="M40 352 C160 300 250 372 420 318" fill="none" stroke="url(#fg2)" stroke-width="2.4" stroke-dasharray="7 7" opacity=".85"/>
+        <circle cx="392" cy="330" r="5" fill="#ffd68a"/>
+      </svg>
+      <div class="hero-card">
+        <strong>正在热映 · 第 3 卷</strong>
+        <span>《第九影·深渊回声》11 月 25 日 20:00 上线，承接第 2 卷结尾的潮汐信号线。</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 主体三栏 -->
+<div class="wrap layout">
+
+  <!-- 左：频道索引 -->
+  <aside class="rail rail-left" aria-label="频道索引">
+    <div class="card">
+      <h2>频道索引</h2>
+      <ul class="chan">
+        <li><a href="/#categories"><b>主线长篇</b><i>9</i></a></li>
+        <li><a href="/#categories"><b>番外短片</b><i>17</i></a></li>
+        <li><a href="/#categories"><b>科幻悬疑</b><i>11</i></a></li>
+        <li><a href="/#categories"><b>都市奇谈</b><i>7</i></a></li>
+        <li><a href="/#categories"><b>纪录影像</b><i>5</i></a></li>
+        <li><a href="/#categories"><b>实验短片</b><i>4</i></a></li>
+        <li><a href="/#categories"><b>专题合辑</b><i>6</i></a></li>
+        <li><a href="/#categories"><b>主创访谈</b><i>8</i></a></li>
+        <li><a href="/#categories"><b>放映活动</b><i>3</i></a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>本周专题</h2>
+      <p class="rail-note">
+        <strong>夜航放映室</strong><br>
+        11 月 24 日上线，收录《第九影·灯塔在不语时》《第九影·零号放映员》等 6 部夜间场景条目，附 4 段主创口述音频。
+      </p>
+      <p class="rail-note" style="margin-top:10px">
+        专题合辑每两周轮换一次，上一期为「暴雨与信号塔」。
+      </p>
+    </div>
+  </aside>
+
+  <!-- 中：主内容 -->
+  <main class="main">
+
+    <!-- 1 概览 -->
+    <section class="block" id="overview">
+      <div class="block-hd">
+        <h2>第九影系列是什么</h2>
+        <span class="sub">领域概览 · 约 420 字</span>
+      </div>
+      <div class="overview">
+        <p>
+          <strong>第九影</strong>是一套以「影像被记录、被改写、被遗忘」为核心的系列作品，主线由 9 部长篇构成，
+          每一部独立成篇，却在时间标记、编号档案与一台老式放映机上互相咬合。它既不是传统的连续剧，也不是纯粹的独立电影合集：
+          单部可以单独看，但只有把编号顺序理顺，才会发现第 2 部里出现的废弃胶片，正是第 7 部整段叙事的起点。
+        </p>
+        <p>
+          当前值得关注的方向大致分四类。第一类是<strong>科幻悬疑主线</strong>，以《第九影·深渊回声》《第九影·潮汐档案》为代表，
+          强调信息残缺与叙事倒错；第二类是<strong>都市奇谈番外</strong>，篇幅短、节奏快，多讲深夜场所里的偶发事件；
+          第三类是<strong>纪录影像</strong>，把虚构设定伪装成拍摄手记，真假边界模糊；第四类是<strong>实验短片</strong>，
+          多为 8—15 分钟的单镜头或单场景作品，适合在通勤、午休这类碎片时间观看。
+        </p>
+        <p>
+          2026 年 11 月这一轮更新集中在两个方向：一是主线第 3 卷《深渊回声》上线，把前两卷留下的潮汐信号线做了解释；
+          二是番外短片新增 6 部，其中《第九影·雨里第三个人》与《第九影·午夜录像带 1997》讨论度最高。
+          如果你只是路过想找一部片子，建议从评分与时长两个维度入手，而不是从编号顺序硬啃。
+        </p>
+        <div class="ov-grid">
+          <div class="ov-item"><b>主线 9 部</b><span>单部 78—112 分钟，编号 01—09，按编号看信息链最完整。</span></div>
+          <div class="ov-item"><b>番外 17 部</b><span>单部 6—24 分钟，独立成篇，可与主线交叉观看。</span></div>
+          <div class="ov-item"><b>纪录影像 5 部</b><span>以伪纪录片形式呈现，附拍摄手记与时间戳。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 精选片单 -->
+    <section class="block" id="featured">
+      <div class="block-hd">
+        <h2>精选片单：9 部主线与番外</h2>
+        <span class="sub">评分与时长均为站内影迷标记汇总</span>
+      </div>
+      <p class="block-desc">按可看性与入口难度排序，前三部适合第一次接触，后六部需要至少看过一部主线后再进入。</p>
+      <div class="fgrid" id="fgrid">
+
+        <article class="fcard" data-k="深渊回声 科幻 悬疑 主线">
+          <figure>
+            <img src="https://picsum.photos/seed/shenyuanhuisheng03/400/300" width="400" height="300" loading="lazy" alt="《第九影·深渊回声》第 3 卷封面：深海信号塔">
+            <span class="badge">主线 03</span><span class="score">8.9</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·深渊回声</a></h3>
+            <p>2026 年 11 月 25 日上线第 3 卷。深海观测站收到一段比自己早 40 年发出的录音，全片以倒叙推进，前 20 分钟需要耐心。</p>
+            <div class="tags"><span class="tag hot">今日上线</span><span class="tag">科幻悬疑</span><span class="tag">96 分钟</span></div>
+            <div class="fcard-meta"><span>标记 1.2 万</span><span>更新至第 3 卷</span></div>
+          </div>
+        </article>
+
+        <article class="fcard" data-k="潮汐档案 科幻 主线 悬疑">
+          <figure>
+            <img src="https://picsum.photos/seed/chaoxidangan02/400/300" width="400" height="300" loading="lazy" alt="《第九影·潮汐档案》第 2 卷封面：退潮后的档案柜">
+            <span class="badge">主线 02</span><span class="score">8.7</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·潮汐档案</a></h3>
+            <p>11 月 22 日评分升至 8.7。以一份被海水泡烂的档案为线索，全片几乎没有配乐，靠环境声撑起压迫感，适合戴耳机观看。</p>
+            <div class="tags"><span class="tag">科幻悬疑</span><span class="tag">88 分钟</span><span class="tag">环境声设计</span></div>
+            <div class="fcard-meta"><span>标记 1.1 万</span><span>第 2 卷已完结</span></div>
+          </div>
+        </article>
+
+        <article class="fcard" data-k="灯塔在不语时 番外 都市奇谈">
+          <figure>
+            <img src="https://picsum.photos/seed/dengtashiyu11/400/300" width="400" height="300" loading="lazy" alt="《第九影·灯塔在不语时》夜间灯塔场景">
+            <span class="badge">番外</span><span class="score">8.5</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·灯塔在不语时</a></h3>
+            <p>11 月 24 日随「夜航放映室」专题上线。18 分钟单场景作品，守塔人与一台只会播放空白磁带的机器对话，收尾干净。</p>
+            <div class="tags"><span class="tag">都市奇谈</span><span class="tag">18 分钟</span><span class="tag">单场景</span></div>
+            <div class="fcard-meta"><span>标记 6400</span><span>11 月 24 日新增</span></div>
+          </div>
+        </article>
+
+        <article class="fcard" data-k="零号放映员 主线 实验">
+          <figure>
+            <img src="https://picsum.photos/seed/linghaofangying01/400/300" width="400" height="300" loading="lazy" alt="《第九影·零号放映员》老式放映机特写">
+            <span class="badge">主线 01</span><span class="score">8.3</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·零号放映员</a></h3>
+            <p>系列入口作，112 分钟。讲一名放映员发现拷贝里多出自己从未拍过的镜头，是全系列信息量最密的一部，建议第一部就看。</p>
+            <div class="tags"><span class="tag">系列入口</span><span class="tag">112 分钟</span><span class="tag">实验影像</span></div>
+            <div class="fcard-meta"><span>标记 1.5 万</span><span>编号 01</span></div>
+          </div>
+        </article>
+
+        <article class="fcard" data-k="雨里第三个人 番外 都市奇谈">
+          <figure>
+            <img src="https://picsum.photos/seed/yulidisanren07/400/300" width="400" height="300" loading="lazy" alt="《第九影·雨里第三个人》雨夜街口剧照">
+            <span class="badge">番外</span><span class="score">8.6</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·雨里第三个人</a></h3>
+            <p>11 月 20 日上线，11 分钟。全片只有一个雨夜街口，三个人先后撑开同一把伞，讨论度最高的是结尾那一秒的路灯闪烁。</p>
+            <div class="tags"><span class="tag hot">讨论度高</span><span class="tag">都市奇谈</span><span class="tag">11 分钟</span></div>
+            <div class="fcard-meta"><span>标记 8900</span><span>11 月 20 日新增</span></div>
+          </div>
+        </article>
+
+        <article class="fcard" data-k="午夜录像带1997 纪录 番外">
+          <figure>
+            <img src="https://picsum.photos/seed/wuyeluxiang1997/400/300" width="400" height="300" loading="lazy" alt="《第九影·午夜录像带 1997》录像带与时间码画面">
+            <span class="badge">纪录影像</span><span class="score">8.2</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·午夜录像带 1997</a></h3>
+            <p>11 月 18 日上线，24 分钟。以 1997 年一卷家庭录像为素材，逐帧标注时间码，真假边界模糊，适合喜欢考据的观众。</p>
+            <div class="tags"><span class="tag">伪纪录</span><span class="tag">24 分钟</span><span class="tag">时间码考据</span></div>
+            <div class="fcard-meta"><span>标记 5200</span><span>11 月 18 日新增</span></div>
+          </div>
+        </article>
+
+        <article class="fcard" data-k="第七码头 主线 悬疑">
+          <figure>
+            <img src="https://picsum.photos/seed/diqimatou05/400/300" width="400" height="300" loading="lazy" alt="《第九影·第七码头》港口集装箱夜景">
+            <span class="badge">主线 05</span><span class="score">8.1</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·第七码头</a></h3>
+            <p>94 分钟，系列里唯一一部白天场景占七成的作品。以集装箱编号为线索，节奏最接近常规悬疑片，新观众接受度较高。</p>
+            <div class="tags"><span class="tag">科幻悬疑</span><span class="tag">94 分钟</span><span class="tag">编号线索</span></div>
+            <div class="fcard-meta"><span>标记 7600</span><span>编号 05</span></div>
+          </div>
+        </article>
+
+        <article class="fcard" data-k="空白带 实验 短片">
+          <figure>
+            <img src="https://picsum.photos/seed/kongbaidai09/400/300" width="400" height="300" loading="lazy" alt="《第九影·空白带》空磁带盒与桌面">
+            <span class="badge">实验短片</span><span class="score">7.9</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·空白带</a></h3>
+            <p>9 分钟单镜头，画面始终对准一盘空磁带，声音全部来自画外。评价两极，适合想快速感受系列影像语言的人试水。</p>
+            <div class="tags"><span class="tag">实验短片</span><span class="tag">9 分钟</span><span class="tag">单镜头</span></div>
+            <div class="fcard-meta"><span>标记 3100</span><span>口碑分化</span></div>
+          </div>
+        </article>
+
+        <article class="fcard" data-k="回声之下的城市 纪录 专题">
+          <figure>
+            <img src="https://picsum.photos/seed/huishengchengshi08/400/300" width="400" height="300" loading="lazy" alt="《第九影·回声之下的城市》城市声景记录画面">
+            <span class="badge">纪录影像</span><span class="score">8.4</span>
+          </figure>
+          <div class="fcard-body">
+            <h3><a href="/#featured">第九影·回声之下的城市</a></h3>
+            <p>11 月 12 日上线，31 分钟。以城市环境声采样为主线，采访了 5 位录音师，是系列里最不像虚构作品的一部。</p>
+            <div class="tags"><span class="tag">城市声景</span><span class="tag">31 分钟</span><span class="tag">主创访谈</span></div>
+            <div class="fcard-meta"><span>标记 4700</span><span>11 月 12 日新增</span></div>
+          </div>
+        </article>
+
+      </div>
+      <p class="noresult" id="noresult">没有找到匹配的条目，换个关键词试试，例如「深渊」「番外」「纪录」。</p>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="block" id="updates">
+      <div class="block-hd">
+        <h2>上线与更新动态</h2>
+        <span class="sub">11 月 3 日 — 11 月 25 日</span>
+      </div>
+      <p class="block-desc">按时间倒序，条目名称与具体变更内容并列，方便判断哪一条值得立刻补看。</p>
+      <ul class="ulist">
+        <li><time>今天 20:00</time><div class="u-main"><b><a href="/#featured">第九影·深渊回声</a></b><span>第 3 卷正式上线，全片 96 分钟，承接第 2 卷结尾的潮汐信号。</span></div></li>
+        <li><time>今天 09:30</time><div class="u-main"><b><a href="/#featured">第九影·潮汐档案</a></b><span>站内评分从 8.6 升至 8.7，标记人数突破 1.1 万。</span></div></li>
+        <li><time>11 月 24 日</time><div class="u-main"><b>「夜航放映室」专题</b><span>上线 6 部夜间场景条目，含 4 段主创口述音频，可单独收听。</span></div></li>
+        <li><time>11 月 24 日</time><div class="u-main"><b><a href="/#featured">第九影·灯塔在不语时</a></b><span>18 分钟番外随专题上线，单场景拍摄，收尾无配乐。</span></div></li>
+        <li><time>11 月 23 日</time><div class="u-main"><b>主线编号页</b><span>补全 01—09 部的拍摄年份与胶片规格，新增交叉引用表。</span></div></li>
+        <li><time>11 月 22 日</time><div class="u-main"><b>第九影·第七码头</b><span>上线 4K 修复版，集装箱编号字幕重做，清晰度提升明显。</span></div></li>
+        <li><time>11 月 20 日</time><div class="u-main"><b><a href="/#featured">第九影·雨里第三个人</a></b><span>11 分钟番外上线，上线 5 天内标记数达 8900。</span></div></li>
+        <li><time>11 月 18 日</time><div class="u-main"><b>第九影·午夜录像带 1997</b><span>24 分钟伪纪录作品上线，附逐帧时间码注释文档。</span></div></li>
+        <li><time>11 月 15 日</time><div class="u-main"><b>主创访谈</b><span>新增录音师专访 2 篇，分别讲城市声景采样与磁带降噪。</span></div></li>
+        <li><time>11 月 12 日</time><div class="u-main"><b>第九影·回声之下的城市</b><span>31 分钟纪录影像上线，采访 5 位环境声录音师。</span></div></li>
+        <li><time>11 月 8 日</time><div class="u-main"><b>第九影·空白带</b><span>上线导演评论音轨，解释单镜头为何不允许剪辑。</span></div></li>
+        <li><time>11 月 3 日</time><div class="u-main"><b>片单索引页</b><span>新增「按观看难度排序」视图，覆盖全部 32 条在册条目。</span></div></li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="block" id="categories">
+      <div class="block-hd">
+        <h2>按类型进入</h2>
+        <span class="sub">8 个分类 · 点击可筛出该类型条目</span>
+      </div>
+      <p class="block-desc">分类标签与站内条目一一对应，标注数量为该类型当前在册条目数。</p>
+      <div class="cat-grid">
+        <a class="cat" href="/#featured"><b>科幻悬疑<i>11 条</i></b><span>编号主线与部分番外，信息残缺、叙事倒错为主。</span></a>
+        <a class="cat" href="/#featured"><b>都市奇谈<i>7 条</i></b><span>深夜场所、偶发事件，篇幅短，节奏快。</span></a>
+        <a class="cat" href="/#featured"><b>纪录影像<i>5 条</i></b><span>伪纪录片形式，附拍摄手记与时间码。</span></a>
+        <a class="cat" href="/#featured"><b>实验短片<i>4 条</i></b><span>单镜头、单场景，8—15 分钟为主。</span></a>
+        <a class="cat" href="/#featured"><b>主线长篇<i>9 条</i></b><span>编号 01—09，按编号看信息链最完整。</span></a>
+        <a class="cat" href="/#featured"><b>番外短片<i>17 条</i></b><span>独立成篇，可与主线交叉观看。</span></a>
+        <a class="cat" href="/#interviews"><b>主创访谈<i>8 条</i></b><span>导演、录音师、剪辑师口述，含文字整理。</span></a>
+        <a class="cat" href="/#timeline"><b>放映活动<i>3 条</i></b><span>线下放映与专题连映，含排片与到场须知。</span></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="block" id="deepdive">
+      <div class="block-hd">
+        <h2>深度解析：编号、时长与观看难度的关系</h2>
+        <span class="sub">约 820 字 · 主体阅读区</span>
+      </div>
+      <div class="article">
+        <p>
+          把第九影系列的 32 条在册条目并排放在一起，最容易被误读的是编号。很多人默认编号越大越靠后、越要靠后看，
+          但实际的信息链并不是线性推进的：编号 01 的《零号放映员》埋下的胶片线索，要到编号 07 才被解释；
+          编号 03 的《深渊回声》反而回头看编号 02 的潮汐记录。编号更像档案柜的抽屉序号，而不是时间轴上的刻度。
+        </p>
+
+        <h3>三种叙事结构，对应三种观看难度</h3>
+        <p>
+          第一类是<strong>单点封闭结构</strong>，代表作是《第七码头》与《雨里第三个人》。全片围绕一个物件或一个场景展开，
+          结尾给出明确答案，不看其他任何一部也能看懂。这类作品观看难度最低，适合作为入口。
+        </p>
+        <p>
+          第二类是<strong>双线互文结构</strong>，如《潮汐档案》和《午夜录像带 1997》。一条线是当下发生的调查，
+          另一条线是过去的记录素材，两条线在某一帧画面上重合。这类作品单看能成立，但会漏掉大约三成的信息，
+          通常需要搭配一篇时间码注释才能看全。
+        </p>
+        <p>
+          第三类是<strong>碎片拼合结构</strong>，以《零号放映员》和《空白带》为代表。它们刻意不给完整叙事，
+          观众必须借助其他条目的画面才能补全。这类作品的观看难度最高，也最容易产生两极评价——
+          站内标记中，《空白带》的评分分布明显比《第七码头》更分散。
+        </p>
+
+        <div class="callout">
+          <b>一个实用的判断方法：</b>看条目简介里有没有出现「承接」「回看」「同一盘拷贝」这类词。
+          出现任意一个，说明它依赖其他条目；三个都没出现，基本可以独立观看。
+        </div>
+
+        <h3>时长与信息密度的反比关系</h3>
+        <p>
+          系列里有一条不太直观的规律：<strong>越短的条目，单位时间的信息密度越高</strong>。
+          《雨里第三个人》只有 11 分钟，但包含 4 处需要回看的细节；而 112 分钟的《零号放映员》虽然总信息量最大，
+          前 40 分钟其实相当舒缓，用来建立空间感。这意味着用「时长」判断投入成本会失准，
+          更合理的做法是看条目简介里的细节提示数量。
+        </p>
+        <table class="cmp">
+          <caption style="text-align:left;font-size:12.5px;color:var(--muted);padding-bottom:6px">三类结构对照</caption>
+          <thead>
+            <tr><th>结构类型</th><th>代表条目</th><th>可否独立观看</th><th>建议准备</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>单点封闭</td><td>第七码头 / 雨里第三个人</td><td>可以</td><td>无需前置，直接看</td></tr>
+            <tr><td>双线互文</td><td>潮汐档案 / 午夜录像带 1997</td><td>基本可以</td><td>备一份时间码注释</td></tr>
+            <tr><td>碎片拼合</td><td>零号放映员 / 空白带</td><td>不建议</td><td>先看编号 01 与 02</td></tr>
+          </tbody>
+        </table>
+
+        <h3>评分该怎么读</h3>
+        <ul>
+          <li><strong>8.5 以上</strong>：通常是结构完整、收尾干净的作品，如《深渊回声》《潮汐档案》，盲选风险低。</li>
+          <li><strong>8.0—8.5</strong>：多为中等篇幅的番外与纪录影像，优点集中在某一方面（声效、摄影、考据），其他方面普通。</li>
+          <li><strong>8.0 以下</strong>：集中在实验短片。评分低不代表不值得看，而是受众面窄，
+              例如《空白带》的争议几乎全部来自「没有叙事」这一点，喜欢影像语言的人反而给高分。</li>
+        </ul>
+        <p>
+          另一个容易忽略的指标是标记人数。标记 1 万以上的条目，评论通常已经覆盖了主要争议点，看之前翻两三条就能判断合不合口味；
+          标记不足 4000 的条目，评论样本少，参考价值有限，更建议直接看简介里的结构类型。
+        </p>
+
+        <h3>系列之外的同类型参照</h3>
+        <p>
+          如果你喜欢《潮汐档案》那种靠环境声推进的方式，可以留意站内「城市声景」标签下的纪录影像；
+          如果更偏好《第七码头》的物件线索，番外里的《灯塔在不语时》与《雨里第三个人》是同一路数，
+          只是把线索从集装箱编号换成了伞与磁带。这两条延伸线比硬啃主线编号更容易找到自己的口味。
+        </p>
+      </div>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="block" id="guide">
+      <div class="block-hd">
+        <h2>观影路径：先看什么，怎么判断值不值得投入</h2>
+        <span class="sub">5 步 · 按投入时间从低到高</span>
+      </div>
+      <ol class="steps">
+        <li><div class="st-body"><h3>先用 11 分钟试水</h3><p>从《雨里第三个人》开始，判断自己是否接受这种「不给答案、只给细节」的表达方式。11 分钟成本最低。</p></div></li>
+        <li><div class="st-body"><h3>再确认结构偏好</h3><p>喜欢明确收尾就跳到《第七码头》；喜欢拼线索就选《潮汐档案》。两部都是 90 分钟左右，可作分水岭。</p></div></li>
+        <li><div class="st-body"><h3>补编号 01 作为地基</h3><p>《零号放映员》前 40 分钟节奏较慢，建议分两次看，但它是理解后续互文关系的前提，不建议跳过。</p></div></li>
+        <li><div class="st-body"><h3>用番外填补等待期</h3><p>主线更新间隔通常在 3—5 周，期间可看《灯塔在不语时》《午夜录像带 1997》这类独立番外，不影响主线理解。</p></div></li>
+        <li><div class="st-body"><h3>最后再碰实验短片</h3><p>《空白带》这类单镜头作品放在最后，此时你已经熟悉系列的影像语言，更容易分辨「刻意留白」与「单纯没拍好」。</p></div></li>
+      </ol>
+      <p class="block-desc" style="margin:16px 0 0">
+        同类条目比较时，优先看三点：是否依赖其他条目、结尾是否给出明确落点、声画是否承担叙事功能。
+        三点中满足两点，基本可以放心投入；只满足一点，建议先看简介里的结构类型再决定。
+      </p>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="block" id="faq">
+      <div class="block-hd">
+        <h2>常见问答</h2>
+        <span class="sub">6 个高频问题</span>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>第九影系列一般多久更新一部？</summary>
+          <div class="ans">主线长篇的间隔通常在 3—5 周，例如第 2 卷《潮汐档案》与第 3 卷《深渊回声》相隔约 4 周；番外短片更新更密集，近一个月内上线了 6 部，平均每周 1—2 部。纪录影像和实验短片没有固定节奏，多与专题合辑一起推出。</div>
+        </details>
+        <details>
+          <summary>《深渊回声》和《潮汐档案》有什么区别？</summary>
+          <div class="ans">两者都属于双线互文结构，但重心不同。《潮汐档案》靠环境声与档案实体推进，几乎没有配乐，压迫感来自声音；《深渊回声》则把重心放在时间倒错上，前 20 分钟是倒叙，观众需要自己把顺序理顺。时长上 88 分钟对 96 分钟，差别不大。</div>
+        </details>
+        <details>
+          <summary>第一次接触，从哪一部开始看比较好？</summary>
+          <div class="ans">推荐两条路径。想低成本试水，先看 11 分钟的《雨里第三个人》；想直接进入主线，从编号 01 的《零号放映员》开始。不建议第一部就看《空白带》，它是单镜头实验作品，缺少叙事支撑，容易误判整个系列。</div>
+        </details>
+        <details>
+          <summary>第九影系列属于什么类型，是电影还是剧集？</summary>
+          <div class="ans">更接近「系列电影」而不是连续剧。9 部主线各自独立成篇，有完整的起承转合，但共享同一套档案编号与放映机设定；17 部番外短片则完全独立。所以既可以按编号连着看，也可以单拎一部出来看。</div>
+        </details>
+        <details>
+          <summary>伪纪录片那几部是真事改编的吗？</summary>
+          <div class="ans">不是。《午夜录像带 1997》《回声之下的城市》都是虚构设定下的纪录影像，拍摄手记与时间码注释是创作的一部分。它们刻意模仿真实素材的质感，但人物、事件与录音均为创作内容，观看时不必当作史料。</div>
+        </details>
+        <details>
+          <summary>评分 8 分以下的实验短片值得看吗？</summary>
+          <div class="ans">取决于你想看什么。如果期待完整故事，8 分以下的《空白带》这类作品大概率会让你失望；如果你对单镜头、画外音、留白这些手法本身感兴趣，它们的价值反而高于部分高分主线。建议先看简介里的结构类型，再决定要不要投入。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8 评论 -->
+    <section class="block" id="comments">
+      <div class="block-hd">
+        <h2>影迷评论</h2>
+        <span class="sub">近 30 天 · 16 条精选</span>
+      </div>
+      <div class="cmts">
+        <div class="cmt"><div class="cmt-hd"><span class="ava">深</span><b>深海观测员</b><time>11 月 25 日</time></div><p>刚看完《<span class="on">第九影·深渊回声</span>》第 3 卷，倒叙那段确实劝退，但理顺之后第 62 分钟那一帧很值。建议先看第 2 卷。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a2">磁</span><b>磁带收藏家</b><time>11 月 25 日</time></div><p>《午夜录像带 1997》的时间码注释做得细，我逐帧对了两遍，有三处对不上，不知道是不是故意的。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a3">雨</span><b>雨夜第三个人</b><time>11 月 24 日</time></div><p>11 分钟能拍成这样已经很厉害，结尾路灯闪一下我回放了五次。就是伞的道具质感有点出戏。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a4">零</span><b>零号观众</b><time>11 月 24 日</time></div><p>《零号放映员》前 40 分钟我看了三次才过，但过了之后后面全部顺了。作为入口作有点狠。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a5">灯</span><b>守塔人小林</b><time>11 月 24 日</time></div><p>《灯塔在不语时》是这轮番外里我最喜欢的，没有配乐反而更好。18 分钟刚刚好，再长就散了。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a6">潮</span><b>潮汐记录者</b><time>11 月 23 日</time></div><p>《潮汐档案》评分涨到 8.7 合理，环境声是真的下了功夫。戴耳机和不戴耳机完全是两部片子。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava">码</span><b>码头七号</b><time>11 月 22 日</time></div><p>4K 修复版上线后集装箱编号终于看清了，之前那版糊得根本没法对线索。这波修复值得。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a2">白</span><b>空白带本人</b><time>11 月 21 日</time></div><p>《空白带》我给 6 分，单镜头九分钟确实太考验耐心，画外音信息量又不够。承认手法有意思，但我没被说服。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a3">声</span><b>城市声景</b><time>11 月 20 日</time></div><p>《回声之下的城市》采访的那几位录音师讲得很实在，尤其讲磁带降噪那段，比很多幕后花絮有料。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a4">编</span><b>编号强迫症</b><time>11 月 19 日</time></div><p>我一直按编号顺序看，看到 05 才发现 01 的线索在 07 才解释。编号真不是时间轴，别学我。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a5">夜</span><b>夜航放映室</b><time>11 月 18 日</time></div><p>专题里六部一起看下来，发现夜间场景几乎都有一台不工作的机器，这个母题挺统一的。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a6">耳</span><b>耳机党老周</b><time>11 月 16 日</time></div><p>建议站内标注一下哪些条目必须戴耳机，像《潮汐档案》这种，用外放真的浪费。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava">慢</span><b>慢热型观众</b><time>11 月 14 日</time></div><p>《第七码头》是我唯一一次一口气看完的，白天场景多，节奏接近普通悬疑片，新观众真的可以从这部进。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a2">胶</span><b>胶片规格控</b><time>11 月 12 日</time></div><p>补的拍摄年份和胶片规格表很有用，能看出 04 和 06 是同一年拍的，难怪影像质感接近。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a3">镜</span><b>单镜头爱好者</b><time>11 月 9 日</time></div><p>《空白带》导演评论音轨值得听，讲为什么不允许剪辑，听完我对这部片子的评价从 6 分提到 7.5 分。</p></div>
+        <div class="cmt"><div class="cmt-hd"><span class="ava a4">等</span><b>等更新的阿禾</b><time>11 月 6 日</time></div><p>主线三到五周一更可以接受，但希望番外能稳定一点，最近一个月六部有点扎堆，来不及看。</p></div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="block" id="news">
+      <div class="block-hd">
+        <h2>相关资讯</h2>
+        <span class="sub">6 条 · 11 月 3 日 — 11 月 25 日</span>
+      </div>
+      <div class="news">
+        <article>
+          <img src="https://picsum.photos/seed/shenyuanxinwen25/600/400" width="600" height="400" loading="lazy" alt="《第九影·深渊回声》第 3 卷上线资讯配图">
+          <div class="n-body"><time>2026-11-25</time><h3><a href="/#updates">《第九影·深渊回声》第 3 卷上线，倒叙结构成讨论焦点</a></h3><p>上线首日标记数破 1.2 万，评论区集中在开场 20 分钟的倒叙处理上。</p></div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/seed/yebanfangying24/600/400" width="600" height="400" loading="lazy" alt="夜航放映室专题上线资讯配图">
+          <div class="n-body"><time>2026-11-24</time><h3><a href="/#categories">「夜航放映室」专题上线 6 部夜间场景条目</a></h3><p>专题附 4 段主创口述音频，可与文字手记对照收听。</p></div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/seed/chaoxidangan22/600/400" width="600" height="400" loading="lazy" alt="《第九影·潮汐档案》评分变动资讯配图">
+          <div class="n-body"><time>2026-11-22</time><h3><a href="/#featured">《潮汐档案》评分升至 8.7，环境声设计被反复提及</a></h3><p>近一周新增评论中，「戴耳机观看」出现频次最高。</p></div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/seed/diqimatou20/600/400" width="600" height="400" loading="lazy" alt="《第九影·第七码头》4K 修复版资讯配图">
+          <div class="n-body"><time>2026-11-20</time><h3><a href="/#deepdive">《第七码头》4K 修复版上线，集装箱编号字幕重做</a></h3><p>修复后物件线索清晰度提升，成为新观众入门的推荐条目。</p></div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/seed/bianhaozhengli15/600/400" width="600" height="400" loading="lazy" alt="第九影主线编号交叉引用表资讯配图">
+          <div class="n-body"><time>2026-11-15</time><h3><a href="/#timeline">主线编号页补全拍摄年份与胶片规格，新增交叉引用表</a></h3><p>覆盖 01—09 部，可据此判断哪些条目影像质感接近。</p></div>
+        </article>
+        <article>
+          <img src="https://picsum.photos/seed/kongbaidai08/600/400" width="600" height="400" loading="lazy" alt="《第九影·空白带》导演评论音轨资讯配图">
+          <div class="n-body"><time>2026-11-08</time><h3><a href="/#comments">《空白带》上线导演评论音轨，解释单镜头取舍</a></h3><p>音轨上线后该条目评分分布有所收窄，但仍呈两极。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="block" id="related">
+      <div class="block-hd">
+        <h2>相关推荐</h2>
+        <span class="sub">延伸方向 · 8 个标签</span>
+      </div>
+      <p class="block-desc">按内容方向延伸，而非按热度排序，适合已经看过主线、想换口味的人。</p>
+      <div class="rel">
+        <a href="/#featured">伪纪录片式时间码考据<i>5 条</i></a>
+        <a href="/#featured">单镜头实验短片<i>4 条</i></a>
+        <a href="/#featured">城市环境声采样<i>3 条</i></a>
+        <a href="/#featured">深夜场所母题<i>6 条</i></a>
+        <a href="/#interviews">录音师口述访谈<i>4 条</i></a>
+        <a href="/#featured">胶片规格对照<i>2 条</i></a>
+        <a href="/#featured">编号交叉引用<i>9 条</i></a>
+        <a href="/#timeline">线下连映排片<i>3 条</i></a>
+      </div>
+    </section>
+
+    <!-- 11 补充：时间线 -->
+    <section class="block" id="timeline">
+      <div class="block-hd">
+        <h2>系列条目时间线</h2>
+        <span class="sub">按拍摄年份排列，非观看顺序</span>
+      </div>
+      <p class="block-desc">拍摄年份与编号并不一致，这也是系列容易被误读的地方。以下为关键节点。</p>
+      <ul class="tl">
+        <li><b><time>2021</time>《零号放映员》开拍</b><span>系列最早完成的影像素材，部分镜头后来被用于编号 07 的回溯段落。</span></li>
+        <li><b><time>2022</time>《潮汐档案》与《第七码头》同期拍摄</b><span>两部共用同一批海边外景，因此影像质感接近，档案柜道具也重复出现。</span></li>
+        <li><b><time>2023</time>《空白带》单镜头实验完成</b><span>全片一镜到底，画外音录制于拍摄当天，未做后期重录。</span></li>
+        <li class="hl"><b><time>2025</time>《午夜录像带 1997》素材整理</b><span>逐帧标注时间码的工作持续了约 7 个月，注释文档随片上线。</span></li>
+        <li class="hl"><b><time>2026 年 11 月</time>《深渊回声》第 3 卷上线</b><span>11 月 25 日 20:00 正式上线，衔接第 2 卷结尾的潮汐信号线。</span></li>
+      </ul>
+    </section>
+
+    <!-- 12 补充：主创证言 -->
+    <section class="block" id="interviews">
+      <div class="block-hd">
+        <h2>主创证言</h2>
+        <span class="sub">录音师与剪辑师 · 摘录</span>
+      </div>
+      <div class="cmts" style="grid-template-columns:1fr">
+        <div class="cmt" style="background:#f7f9fd;border-left:3px solid var(--brand);border-radius:0 8px 8px 0">
+          <div class="cmt-hd"><span class="ava a6">录</span><b>环境声录音师 · 陈叙</b><time>11 月 15 日访谈</time></div>
+          <p>「《潮汐档案》里那段退潮声其实录了 11 遍，最后用的是凌晨三点那一版。白天录的总有远处车声，压不掉。」</p>
+        </div>
+        <div class="cmt" style="background:#f7f9fd;border-left:3px solid var(--accent);border-radius:0 8px 8px 0">
+          <div class="cmt-hd"><span class="ava a3">剪</span><b>剪辑师 · 罗青禾</b><time>11 月 15 日访谈</time></div>
+          <p>「编号不是时间顺序，是我们剪辑时贴的标签。观众按编号看会觉得乱，其实是故意的，档案本来就不按时间归档。」</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右：辅助栏 -->
+  <aside class="rail rail-right" aria-label="热榜与更新流">
+    <div class="card">
+      <h2>站内热榜</h2>
+      <ol class="rank">
+        <li><a href="/#featured">第九影·深渊回声</a><small>8.9 · 今日上线</small></li>
+        <li><a href="/#featured">第九影·潮汐档案</a><small>8.7 · 评分上升</small></li>
+        <li><a href="/#featured">第九影·雨里第三个人</a><small>8.6 · 11 分钟</small></li>
+        <li><a href="/#featured">第九影·灯塔在不语时</a><small>8.5 · 专题新片</small></li>
+        <li><a href="/#featured">第九影·回声之下的城市</a><small>8.4 · 纪录影像</small></li>
+        <li><a href="/#featured">第九影·零号放映员</a><small>8.3 · 系列入口</small></li>
+        <li><a href="/#featured">第九影·午夜录像带 1997</a><small>8.2 · 伪纪录</small></li>
+        <li><a href="/#featured">第九影·第七码头</a><small>8.1 · 4K 修复</small></li>
+      </ol>
+    </div>
+    <div class="card">
+      <h2>更新流</h2>
+      <ul class="upd">
+        <li>深渊回声 第 3 卷上线<time>今天 20:00</time></li>
+        <li>潮汐档案 评分 8.7<time>今天 09:30</time></li>
+        <li>夜航放映室 专题上线<time>11 月 24 日</time></li>
+        <li>灯塔在不语时 新增<time>11 月 24 日</time></li>
+        <li>雨里第三个人 讨论升温<time>11 月 20 日</time></li>
+        <li>午夜录像带 1997 上线<time>11 月 18 日</time></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>观看提示</h2>
+      <p class="rail-note">
+        双线互文结构条目建议备一份时间码注释；单镜头作品建议使用耳机。
+        番外短片可与主线交叉观看，不影响主线理解。
+      </p>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="foot">
+  <div class="wrap">
+    <div>
+      <div class="fbrand">
+        <svg width="28" height="28" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="11" fill="#1f5fd6"/>
+          <circle cx="20" cy="20" r="9.4" fill="none" stroke="#9fc2ff" stroke-width="1.6" opacity=".7"/>
+          <path d="M15.5 12.6h3.2v14.8h-3.2z" fill="#fff"/>
+          <path d="M21.3 12.6h3.2v14.8h-3.2z" fill="#ffd68a"/>
+          <circle cx="20" cy="20" r="2.4" fill="#e8532f"/>
+        </svg>
+        <strong>花花神马第九影电影</strong>
+      </div>
+      <p>围绕第九影系列的片单与观影索引，收录 9 部主线长篇、17 部番外短片与 6 个专题合辑，按结构类型与观看难度整理，附评分、时长与逐条看点。</p>
+      <p>站内评分与标记数来自影迷公开标记汇总，条目上线时间以站内记录为准；影像内容版权归各制作方所有。</p>
+    </div>
+    <div>
+      <h4>片单</h4>
+      <ul>
+        <li><a href="/#featured">精选片单</a></li>
+        <li><a href="/#categories">类型分类</a></li>
+        <li><a href="/#updates">上线动态</a></li>
+        <li><a href="/#timeline">条目时间线</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>阅读</h4>
+      <ul>
+        <li><a href="/#deepdive">深度解析</a></li>
+        <li><a href="/#guide">观影路径</a></li>
+        <li><a href="/#faq">常见问答</a></li>
+        <li><a href="/#interviews">主创证言</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>社区</h4>
+      <ul>
+        <li><a href="/#comments">影迷评论</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+        <li><a href="/#overview">站内概览</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="foot-bot">
+      <span>© 2026 花花神马第九影电影 · 影迷内容社区</span>
+      <span>条目信息以站内记录为准 · 数据更新时间 2026-11-25</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var btn = document.getElementById('qbtn');
+  var grid = document.getElementById('fgrid');
+  var nores = document.getElementById('noresult');
+  if(!grid) return;
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.fcard'));
+
+  function run(){
+    var kw = (q && q.value ? q.value : '').trim().toLowerCase();
+    if(!kw){
+      cards.forEach(function(c){ c.classList.remove('hidden'); });
+      if(nores) nores.classList.remove('on');
+      return;
+    }
+    var hit = 0;
+    cards.forEach(function(c){
+      var text = (c.getAttribute('data-k') || '') + ' ' + c.textContent.toLowerCase();
+      var ok = text.indexOf(kw) > -1;
+      c.classList.toggle('hidden', !ok);
+      if(ok) hit++;
+    });
+    if(nores) nores.classList.toggle('on', hit === 0);
+  }
+
+  if(btn) btn.addEventListener('click', run);
+  if(q){
+    q.addEventListener('input', run);
+    q.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); run(); }
+    });
+  }
+})();
+</script>
+</body>
+  </html>
